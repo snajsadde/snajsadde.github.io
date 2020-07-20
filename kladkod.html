@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="cssfranw3.css">
+<link rel="stylesheet" href="googleapis.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  
+  min-height: 100%;
+  background-color: #ff66ff;
+}
+body {
+  background-color: #E6E6FA;
+}
+.menu {
+  display: none;
+}
+</style>
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="framsida.html" class="w3-button w3-block w3-black">Framsida</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="info.html" class="w3-button w3-block w3-black">Info</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="kladkod.html" class="w3-button w3-block w3-black">Klädkod/Dresscode</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="OSAS.html" class="w3-button w3-block w3-black">OSAS/RSVP</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class=" w3-grayscale w3-large"> 
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Klädkod:<br>Kavaj</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding w3-white">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">För honom</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">För henne</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-white w3-card">
+      <h5>Kavaj, vilket innebär...</h5>
+      <p class="w3-text-black">Kavaj innebär för herrar att man ska bära kostym. Valfriheten är dock stor vad gäller färg, både på själva kostymen och skjortan. Kostymen kan vara både tvådelad, eller tredelad (med väst). Viktigt att tänka på är dock att en kostym alltid är sydd i samma tyg och samma färg, en nyansskillnad kan göra stor skillnad och drar ned helhetsintrycket. Slips eller fluga är obligatoriskt. Vad gäller skor så ska de vara svarta efter kl 18, och bär man skärp så ska det gärna matcha skorna i färg. Bruna skor kan användas tidigare på dagen, men ska aldrig kombineras med mörk kostym.
+      
+    <br><br>* Kostym i valfri färg. Kavaj, byxa och eventuellt väst ska vara i samma tyg och färg. Desto mörkare färg ju mer formellt.
+    <br>* Skjorta i valfri färg. Desto ljusare färg ju mer formellt.
+    <br>* Slips eller fluga är obligatoriskt
+    <br> För mer tips och råd klicka på länken nedan
+    <br>
+     <a href="http://www.kladkoder.nu/kavaj/">http://www.kladkoder.nu/kavaj/</a> 
+      <br>  Eller hör av dig till brudparet.</p> 
+    </div>
+ 
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-white w3-card">
+     <h5>Klänning, vilket innebär klänning typish</h5>
+      <p class="w3-text-black">Observera att order Kavaj här är en benämning på en klädkod, och alltså inte vad man som kvinna ska ha på sig. Som nämnts ovan så hade tidigare klädkoden kavaj som innebörd mörk kostym för herrar, och för damer var det då mörk kostymklänning som gällde. Idag, då klädkoden fått en lite annan innebörd, så är det givetvis så att man även som kvinna kan klä sig mindre formellt.
+           <br> För mer tips och råd klicka på länken nedan <br>
+   <a href="http://www.kladkoder.nu/kavaj/">http://www.kladkoder.nu/kavaj/</a> 
+      <br> Eller hör av dig till brudparet.</p> 
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="cssfranw3.css">
+<link rel="stylesheet" href="googleapis.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: auto;
+  background-image: url();
+  background-repeat: no-repeat;
+  min-height: 80%;
+  min-width: 70%;
+
+}
+body {
+  background-color: #E6E6FA;
+}
+.menu {
+  display: none;
+}
+</style>
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="framsida.html" class="w3-button w3-block w3-black">Framsida</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="info.html" class="w3-button w3-block w3-black">Info</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="kladkod.html" class="w3-button w3-block w3-black">Klädkod/Dresscode</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="OSAS.html" class="w3-button w3-block w3-black">OSAS/RSVP</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Om svar anhålles senast den 2021/04/31</span></h5>
+   
+    <div class="w3-panel w3-leftbar w3-white">
+     <p><i>Skriv in detta för hela sällskapet som ska komma</i></p>
+      <p><i>För och efternamn på samtliga i sällskapet</i></p>
+       <p><i>Allergier </i></p
+        <p><i>Specialkost </i></p
+         <p><i>Övrig info</i></p
+          <p><i>Eventuella frågor</i></p
+          <br> </br>
+
+      <p><i>Maila detta till <u><big>annaochsebastiansbrollop@gmail.com</u></big> senast den 2021/04/31</i></p>
+      
+     <p><i> Kom gärna även med förslag på låtar som kan spelas senare på kvällen</i></p>
+    </div>
+  </div>
+</div>
+<!-- Header with image --> 
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+ 
+  </div>
+ 
+  </div>
+</header>
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class=" w3-grayscale w3-large">
+
+
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
